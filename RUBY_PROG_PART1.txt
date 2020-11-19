@@ -1,0 +1,150 @@
+RUBY PROGRAMMING BASICS :
+------------------------
+
+Checking ruby version: Open cmd > Ruby -v 
+
+Gems : Gems are synonymous to jar files in Java and help us to intstall libraries 
+
+Some of the commands are :
+
+gem list --local : Gives us a list of all the gems installed on our pc 
+gem install gemName : Installs the particular gem on our PC .
+gem uninstall gemName: Uninstalls the gem from our pc .
+gem fetch gemName: Downloads the gem only but does not install.
+
+How to run Ruby scripts ?
+--------------------------
+
+RULE :  Always save the files as FileName.rb  ( the .rb is an extension to save ruby files)
+
+Type1: If you are using an IDE like Eclipse or RubyMine simply save and run 
+
+Type2: If you are using any text editor like SublimeText or Notepad++ then :
+
+Step1: Go to the directory where your ruby file is saved (i.e the FileName.rb)
+Step2 :  Open cmd 
+Step3: Type in the command : ruby FileName.rb 
+Step4: Press enter 
+
+
+PRINTING STATEMENTS :
+-------------------
+ 
+We can print statements using the following commands :
+
+>puts : Prints a new line 
+>print : does not print a new line 
+
+
+Example :                    
+
+puts 'First Line'
+print'Second Line'
+puts 'Third Line' 
+
+
+Output:>
+
+First Line                                     ===============>prints a new line 
+Second LineThird Line
+
+
+USING COMMENTS IN YOUR RUBY FILE :
+=================================
+
+SINGLE LINE COMMENT : Single Line comments are made using the #
+
+Example :
+
+#We are printing a comment here 
+
+MULTI LINE COMMENT : Multi Line comments 
+
+Example :
+
+=begin
+
+This is a multi line comment line 1
+This is a multi line comment line 2
+
+=end 
+
+READ INPUT FROM USER :
+=====================
+
+method1: USING gets 
+
+EXAMPLE :
+puts " Enter your name"
+name = gets 
+puts "The name is "+ name 
+
+method2: using gets.chomp
+
+For string :
+
+name = gets.chomp
+
+for integer :
+
+integer = gets.chomp.to_i
+
+for float :
+
+float =gets.chomp.to_f
+
+
+THINGS TO NOTE WHILE PRINTING VALUES CONTAINED IN VARIABLES / CONCATENATION ISSUES IN RUBY :
+===========================================================================================
+
+1> Whenever we store a string value in any variable we can easily concatenate with puts : For eg:
+
+puts "Enter the values of name"
+name= gets.chomp
+puts "The name is"+name 
+[We can easily concatenate the value contained in the var called name with the contents of puts in "  "]
+
+
+2> For INTEGER & FLOAT values we cannot conatenate for that we use something called as INTERPOLATION . For eg:
+
+puts "Enter the integer value"
+int = gets.chomp.to_i
+puts "The value of integer is #{int}"     ===============>CORRECT OUTPUT 
+
+
+However if we write :
+puts "The valus of integer is" +int          ====================>INCORRECT OUTPUT
+
+
+BLOCK IN RUBY :
+==============
+
+In ruby we have two blocks mainly the BEGIN & END .
+
+Whatever we write in the BEGIN block that will get executed first 
+Whatever we write in the END  block that will get executed last 
+
+
+BEGIN {
+
+Code written here will be execute : Mainly code to start a browser is written here 
+}
+
+END {
+Code will get executed in the end  : Mainly code to quit browser is written here 
+}
+
+NOTE : We can use indiviadually BEGIN &  END as well.
+====
+
+
+
+
+
+
+
+
+
+
+
+
